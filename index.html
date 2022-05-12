@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Koulen&family=Raleway:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+    <title>Document</title>
+    <style>
+        html {
+            font-family: 'Raleway', sans-serif;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        header {
+            clear: both;
+            display: block;
+            background: darkorange;
+            height: 713px;
+        }
+
+        .top_h {
+            padding: 9px;
+        }
+
+        .logo_h {
+            display: grid;
+            grid-template-columns: auto auto;
+            font-size: 16px;
+            text-align: center;
+            font-family: 'Roboto', sans-serif;
+            float: left;
+            column-gap: 10px;
+        }
+
+        .logo_h img {
+            height: 48px;
+        }
+
+        .logo_h h1 {
+            font-size: 25px;
+        }
+
+        .left_c p {
+            border: 2px dashed;
+            padding: 11px;
+            font-weight: bolder;
+            color: brown;
+            width: 423px;
+        }
+
+        .left_c h1 {
+            font-weight: bolder;
+            color: brown;
+            font-size: 80px;
+            margin-top: 0;
+            margin-bottom: 0;
+            font-family: system-ui;
+            text-shadow: 5px 3px #fff;
+        }
+
+        .left_c h3 {
+            font-size: 37px;
+            margin-top: 0;
+            font-family: initial;
+            color: brown;
+            text-shadow: 5px 3px #fff;
+        }
+
+        .right_c img {
+            float: right;
+            margin-top: 36px;
+        }
+
+        .left_C img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .details_h {
+            float: right;
+            display: flex;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .details_h img {
+            height: 37px;
+        }
+
+        .bottom_h {
+            display: block;
+            clear: both;
+        }
+
+        .bottom_h ul {
+            list-style-type: none;
+            float: right;
+            margin-top: -5px;
+            font-family: 'Raleway', sans-serif;
+            font-family: 'Roboto', sans-serif;
+            letter-spacing: 2px;
+        }
+
+        .bottom_h ul li {
+            display: inline;
+            margin: 3px;
+        }
+
+        .content {
+            clear: both;
+            display: flex;
+            height: 536px;
+            padding: 41px;
+        }
+
+        .left_c {
+            height: 100%;
+            margin-left: 21px;
+            margin-top: 98px;
+            width: 100%;
+            padding: 26px;
+        }
+
+
+        .left_C {
+            width: 50%;
+            padding: 10px;
+        }
+
+        .right_C {
+            width: 50%;
+            padding: 10px;
+        }
+
+        .right_C img {
+            width: 100%;
+            height: 47%;
+            margin-bottom: 24px;
+        }
+
+        .test_button {
+            background: orange;
+            width: 341px;
+            margin: auto;
+            color: brown;
+            text-align: center;
+            padding: 12px;
+            font-size: 23px;
+            font-weight: bolder;
+            font-family: initial;
+        }
+
+        .contexnt_1 {
+            font-weight: 1000;
+            color: brown;
+            font-size: 42px;
+            margin-top: 0;
+            margin-bottom: 0;
+            font-family: system-ui;
+            text-shadow: 5px 3px #fff;
+            text-align: center;
+        }
+
+        .contexnt_2 {
+            text-shadow: 5px 5px 10px black;
+            text-align: center;
+        }
+
+        .burger_all {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 102px;
+        }
+
+        .burger_item {
+            width: 30%;
+        }
+
+        .burger_item img {
+            width: 100%;
+            height: 356px;
+        }
+
+        .burger_card {
+            display: flex;
+            flex-direction: row;
+            margin: 86px;
+            box-shadow: 20px 20px 50px grey;
+        }
+
+        .burger_CL {
+            width: 50%;
+            padding: 26px;
+        }
+
+        .burger_CR {
+            width: 50%;
+        }
+
+        .burger_CR img {
+            width: 100%;
+            padding: 14px;
+        }
+
+        input[type=text],
+        select {
+            width: 376px;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type=text],
+        select :hover {
+            border: 1px solid skyblue;
+        }
+
+        input[type=submit] {
+            width: 100%;
+            background-color: red;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .burger_form {
+            text-align: center;
+        }
+
+        .info_form {
+            display: grid;
+            grid-template-columns: auto auto;
+            justify-content: center;
+        }
+
+        .info_item {
+            width: 100%;
+            padding: 9px 45px 2px 0px;
+        }
+
+        .burger_form {
+            display: flex;
+        }
+
+        .form_l {
+            position: relative;
+            width: 20%;
+        }
+
+        .form_c {
+            width: 60%;
+        }
+
+        .form_R {
+            position: relative;
+            width: 20%;
+        }
+
+        .footer {
+            background-image: url("footer.png");
+            background-size: 100% 100%;
+        }
+
+        footer {
+            display: flex;
+
+        }
+
+        .footer_l {
+            width: 50%;
+            padding: 65px;
+        }
+
+        .footer_r {
+            width: 50%;
+            position: relative;
+        }
+
+        .logo_f {
+            display: flex;
+        }
+
+        .footer_icon_t {
+            display: flex;
+        }
+
+        .footer_icon_b {
+            display: flex;
+        }
+
+        .footer_icon {
+            position: absolute;
+            bottom: 76px;
+            text-shadow: 5px 8px 10px black;
+            font-weight: bolder;
+            right: 42px;
+        }
+
+        .footer_b {
+            width: 100%;
+            clear: both;
+            display: flex;
+            padding: 15px;
+
+        }
+
+        .footer_b_l {
+            width: 50%;
+            font-family: initial;
+            color: white;
+            padding-left: 26px;
+        }
+
+        .footer_b_r {
+            width: 50%;
+        }
+
+        .social {
+            float: right;
+        }
+
+        /* media quries    */
+        @media only screen and (min-width: 600px) {
+
+            /* For tablets: */
+            .col-s-1 {
+                width: 8.33%;
+            }
+
+            .col-s-2 {
+                width: 16.66%;
+            }
+
+            .col-s-3 {
+                width: 25%;
+            }
+
+            .col-s-4 {
+                width: 33.33%;
+            }
+
+            .col-s-5 {
+                width: 41.66%;
+            }
+
+            .col-s-6 {
+                width: 50%;
+            }
+
+            .col-s-7 {
+                width: 58.33%;
+            }
+
+            .col-s-8 {
+                width: 66.66%;
+            }
+
+            .col-s-9 {
+                width: 75%;
+            }
+
+            .col-s-10 {
+                width: 83.33%;
+            }
+
+            .col-s-11 {
+                width: 91.66%;
+            }
+
+            .col-s-12 {
+                width: 100%;
+            }
+
+            [class*="col-"] {
+                width: 100%;
+            }
+
+            header {
+                clear: both;
+                display: block;
+                background: darkorange;
+                height: 360px;
+            }
+
+            .logo_h img {
+                height: 36px;
+            }
+
+            .logo_h h1 {
+                font-size: 17px;
+            }
+
+            .details_h img {
+                height: 21px;
+            }
+
+            .details_h p {
+                font-size: 9px;
+            }
+
+            .bottom_h ul {
+                list-style-type: none;
+                float: right;
+                margin-top: -5px;
+                font-family: 'Raleway', sans-serif;
+                font-family: 'Roboto', sans-serif;
+                letter-spacing: 2px;
+                font-size: 11px;
+            }
+
+            .left_c {
+                height: 100%;
+                margin-left: -45px;
+                margin-top: -16px;
+                width: 100%;
+                padding: 26px;
+            }
+
+            .left_c p {
+                border: 2px dashed;
+                padding: 9px;
+                font-weight: bolder;
+                color: brown;
+                width: 267px;
+                font-size: 10px;
+            }
+
+            .left_c h1 {
+                font-weight: bolder;
+                color: brown;
+                font-size: 39px;
+                margin-top: 0;
+                margin-bottom: 0;
+                font-family: system-ui;
+                text-shadow: 2px 1px #fff;
+            }
+
+            .left_c h3 {
+                font-size: 27px;
+                margin-top: 0;
+                font-family: initial;
+                color: brown;
+                text-shadow: 2px 1px #fff;
+            }
+
+            .right_c img {
+                float: right;
+                margin-top: -7px;
+                height: 254px;
+            }
+
+            .content {
+                clear: both;
+                display: flex;
+                height: 333px;
+                padding: 41px;
+            }
+
+            .right_C img {
+                width: 100%;
+                height: 50%;
+                margin-bottom: 4px;
+            }
+
+            .test_button {
+                background: orange;
+                width: 212px;
+                margin: auto;
+                color: brown;
+                text-align: center;
+                padding: 12px;
+                font-size: 15px;
+                font-weight: bolder;
+                font-family: initial;
+            }
+
+            .contexnt_1 {
+                font-weight: 1000;
+                color: brown;
+                font-size: 28px;
+                margin-top: 0;
+                margin-bottom: 0;
+                font-family: system-ui;
+                text-shadow: 5px 3px #fff;
+                text-align: center;
+            }
+
+            .contexnt_2 {
+                text-shadow: 5px 5px 10px black;
+                text-align: center;
+                font-size: 12px;
+            }
+        }
+
+        @media only screen and (min-width: 768px) {
+
+            /* For desktop: */
+            .col-1 {
+                width: 8.33%;
+            }
+
+            .col-2 {
+                width: 16.66%;
+            }
+
+            .col-3 {
+                width: 25%;
+            }
+
+            .col-4 {
+                width: 33.33%;
+            }
+
+            .col-5 {
+                width: 41.66%;
+            }
+
+            .col-6 {
+                width: 50%;
+            }
+
+            .col-7 {
+                width: 58.33%;
+            }
+
+            .col-8 {
+                width: 66.66%;
+            }
+
+            .col-9 {
+                width: 75%;
+            }
+
+            .col-10 {
+                width: 83.33%;
+            }
+
+            .col-11 {
+                width: 91.66%;
+            }
+
+            .col-12 {
+                width: 100%;
+            }
+        }
+
+        @media only screen and (max-width: 768px) {
+
+            /* For mobile phones: */
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="top_h">
+            <div class="logo_h">
+                <img src="logo.png" alt="" srcset="">
+                <h1 style="">BURGER KING</h1>
+            </div>
+            <div class="details_h">
+                <img src="delivery.png" alt="" srcset="" style="">
+                <p>Express Delivery +1234 567 890</p>
+            </div>
+        </div>
+        <div class="bottom_h">
+            <ul>
+                <li>HOME</li>
+                <li>MENU</li>
+                <li>OUR STORY</li>
+                <li>CONTACT US</li>
+            </ul>
+        </div>
+
+        <div class="content">
+            <div class="left_c">
+                <p>IT IS A GOOD
+                    TIME FOR THE
+                    GREAT OF BURGERS</p>
+                <h1 style="">
+                    BURGER</h1>
+                <h3 style="">
+                    WEEK</h3>
+            </div>
+            <div class="right_c">
+                <img src="right_cover.png" alt="" srcset="">
+            </div>
+        </div>
+    </header>
+    <br>
+    <div class="content">
+        <div class="left_C">
+            <img src="burger_l.jpg" alt="" srcset="" style="">
+        </div>
+        <div class="right_C">
+            <img src="banner1.webp" alt="" srcset="" style="">
+            <img src="banner2.jpg" alt="" srcset="" style="width: 100%;height: 47%;">
+        </div>
+    </div>
+    <br><br>
+    <div class="test_button">
+        ALWAYS TESTY BURGER
+    </div>
+    <br> <br>
+    <p style="" class="contexnt_1">
+        CHOOSE &amp; ENJOY</p>
+    <p style="" class="contexnt_2">Lorem ipsum dolor sit amet
+        consectetur adipisicing
+        elit. Veritatis cupiditate minima laboriosam expedita illo
+        pariatur? Aliquam, iusto. Reiciendis dolorem laudantium quam recusandae beatae, nam nulla. Omnis ipsa incidunt
+        quos dolore.</p>
+
+    <div class="burger_all">
+        <div class="burger_item">
+            <img src="buger1.png" alt="" srcset="" style="">
+            <p style="font-family: initial;font-size: 34px;text-align: center;font-weight: 615;margin-bottom: 0px;">
+                Lorem, ipsum dolor.</p>
+            <p style="text-align: center">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+            <div
+                style="width: 102px;background: red;margin: auto;color: white;font-size: 21px;padding: 11px;text-align: center;font-weight: bolder;">
+                ORDER</div>
+        </div>
+        <div class="burger_item">
+            <img src="buger2.png" alt="" srcset="" style="">
+            <p style="font-family: initial;font-size: 34px;text-align: center;font-weight: 615;margin-bottom: 0px;">
+                Lorem, ipsum dolor.</p>
+            <p style="text-align: center">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+            <div
+                style="width: 102px;background: red;margin: auto;color: white;font-size: 21px;padding: 11px;text-align: center;font-weight: bolder;">
+                ORDER</div>
+        </div>
+        <div class="burger_item">
+            <img src="burger3.png" alt="" srcset="" style="">
+            <p style="font-family: initial;font-size: 34px;text-align: center;font-weight: 615;margin-bottom: 0px;">
+                Lorem, ipsum dolor.</p>
+            <p style="text-align: center">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+            <div
+                style="width: 102px;background: red;margin: auto;color: white;font-size: 21px;padding: 11px;text-align: center;font-weight: bolder;">
+                ORDER</div>
+        </div>
+    </div>
+    <br><br>
+    <div class="burger_card">
+        <div class="burger_CL">
+            <p style="font-weight: 922;color: brown;font-size: 19px;">DISCOVER</p>
+            <p style="font-family: system-ui;color: brown;font-size: 29px;font-weight: bolder;">UPCOMING EVENTS</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem doloremque provident debitis ut. Harum
+                rem sapiente, dolorum sit ab tempore minus reprehenderit in facilis consequatur voluptate animi autem
+                sequi explicabo?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque molestiae officia
+                ea corporis ipsa laudantium nam, tenetur hic reprehenderit cumque asperiores a mollitia soluta et
+                corrupti quos accusantium ipsam expedita?Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
+                ad, expedita sapiente sint aliquam tempore voluptas totam provident atque dicta quibusdam magni
+                blanditiis asperiores laborum natus molestias sed, quod harum!Lorem Lorem ipsum dolor sit amet
+                consectetur, adipisicing elit. Maxime modi necessitatibus esse aliquam adipisci ullam quo, dolores
+                tempora eligendi obcaecati ducimus, hic quam facilis similique? Itaque illo amet repudiandae voluptate!
+            </p>
+        </div>
+        <div class="burger_CR">
+            <img src="burger_poster.jpg" alt="" srcset="">
+        </div>
+    </div>
+
+    <div class="burger_form">
+        <div class="form_l">
+            <img src="b2.png" alt="" srcset="" style="height: 107px;rotate: -13deg;">
+            <img src="b3.png" alt="" srcset="" style="height: 138px;position: absolute;bottom: 0;left: 109px;">
+        </div>
+        <div class="form_c">
+            <p style="font-weight: bolder;font-family: system-ui;margin-bottom: 0px;">RESRVATION</p>
+            <p style="font-family: system-ui;font-size: 42px;font-weight: bolder;margin-top: 0px;">BOOK YOUR TABLE</p>
+            <div class="info_form">
+                <div class="info_item">
+                    <input type="text" id="fname" name="firstname" placeholder="NAME">
+                </div>
+                <div class="info_item">
+                    <input type="text" id="fname" name="firstname" placeholder="EMAIL">
+                </div>
+                <div class="info_item">
+                    <input type="text" id="fname" name="firstname" placeholder="DATE">
+                </div>
+                <div class="info_item">
+                    <input type="text" id="fname" name="firstname" placeholder="TIME">
+                </div>
+                <div class="info_item">
+                    <input type="text" id="fname" name="firstname" placeholder="PEOPLE">
+                </div>
+                <div class="info_item">
+                    <input type="submit" value="Submit">
+                </div>
+
+            </div>
+        </div>
+        <div class="form_R">
+            <img src="b1.png" alt="" srcset="" style="height: 116px;position: absolute;bottom: 0;">
+        </div>
+    </div>
+
+    <div class="footer">
+        <footer>
+            <div class="footer_l">
+                <div class="logo_f">
+                    <img src="footer_logo.png" alt="" srcset="" style="height: 73px;">
+                    <p
+                        style="font-size: 48px;color: white;font-weight: bolder;font-family: system-ui;margin-top: 0px;letter-spacing: 6px;">
+                        BURGER KING</p>
+                </div>
+                <p style="color: white;text-shadow: 5px 5px 10px black;">Lorem ipsum dolor sit amet consectetur,
+                    adipisicing
+                    elit. Inventore ducimus ex ipsam quidem neque vitae
+                    obcaecati ad? Eius blanditiis doloremque dolor repellendus, sunt quaerat nam dolores eveniet eum est
+                    hic! Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium soluta ipsa repellendus
+                    aut,
+                    animi voluptate possimus placeat maiores aliquid eligendi velit obcaecati numquam recusandae amet
+                    quisquam voluptatum, rem quidem quaerat.</p>
+            </div>
+            <div class="footer_r">
+                <div class="footer_icon">
+                    <div class="footer_icon_t">
+                        <i class="fa-solid fa-location-dot" style="color: white;margin-right: 9px;"></i>
+                        <p style="margin-top: 0px;color: white;font-weight: bolder;">MAIN ROAD, BUILDING NAME, COUNTRY
+                        </p>
+                    </div>
+                    <div class="footer_icon_b">
+                        <i class="fa-solid fa-envelope" style="color: white;margin-right: 9px;"></i>
+                        <p style="margin-top: 0px;color: white;font-weight: bolder;">MAIN ROAD, BUILDING NAME, COUNTRY
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </footer>
+        <div class="footer_b">
+            <div class="footer_b_l">
+                @COPYRIGHT NAME 2020 ALL RIGHTS RESERVED
+            </div>
+            <div class="footer_b_r">
+                <div class="social">
+                    <i class="fa-brands fa-instagram" style="color: white;margin-right: 9px;"></i>
+                    <i class="fa-brands fa-facebook" style="color: white;margin-right: 9px;"></i>
+                    <i class="fa-brands fa-twitter" style="color: white;margin-right: 9px;"></i>
+                    <i class="fa-brands fa-whatsapp" style="color: white;margin-right: 9px;"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
